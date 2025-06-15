@@ -7,7 +7,7 @@ export default defineConfig([
   {
     files: ['**/*.{js,mjs,cjs,jsx}'],
     plugins: { js },
-    extends: ['js/recommended', "eslint:recommended", 'plugin:react/recommended'],
+    extends: ['js/recommended', "eslint:recommended"],
   },
   {
     files: ['**/*.{js,mjs,cjs,jsx}'],
