@@ -1,8 +1,10 @@
 import express from 'express';
-import { getMessage } from './message.controller.js';
+import { getMessages, addMessage, removeMessage } from './message.controller.js';
 
 const router = express.Router();
 
-router.get('/', getMessage);
+router.get('/get-messages', getMessages);
+router.post('/create-message', addMessage);
+router.get('/delete-message/:id', removeMessage);
 
 export default router;
